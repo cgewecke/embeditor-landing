@@ -127,8 +127,16 @@ aside {
   padding-left: 20px;
   padding-right: 20px; }
 
+@media (max-width: 1200px) {
+  .hide-1200 {
+    display: none; } }
+
 @media (max-width: 767px) {
   .no-top-xs {
+    margin-top: 0px !important; } }
+
+@media (min-width: 768px) {
+  .no-top-sm {
     margin-top: 0px !important; } }
 
 .graphic-small {
@@ -195,7 +203,7 @@ section.call-to-action {
     color: #333; } }
 @media screen and (max-width: 768px) {
   .jumbotron {
-    background-image: url(../img/jumbolightstone_s.png); } }
+    background-image: url(../img/ytdisc_m.png); } }
 @media screen and (max-width: 414px) {
   .jumbotron {
     padding: 0px 15px;

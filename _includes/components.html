@@ -3,44 +3,46 @@
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">Editor Features</h2>
-                <hr class="divider">
+                <hr class="divider-thin">
             </div>
         </div>
     </div>
-    <div class="container">
+    <!-- Desktop Layout -->
+    <div class="container hidden-sm">
          <div class="row">
             <!-- Editor features description -->
-            <div class="col-lg-4 col-sm-4 col-xs-12">
-                <div class="service-box">
-                  <!-- Search -->
+            <div class="col-lg-4 col-md-4">
+                <div class="row service-box">
+                  <!-- Search -->        
                   <h3 class="light"> <i class="fa fa-search"></i>&nbsp&nbspSearch </h3>
                   <p>
-                    Search YouTube's video database with filters for duration, sorting 
-                    by date and relevance, and search history.  
-                  </p>
-                  <!-- Player -->
+                    Search YouTube's video and channels database with filters for duration, date and relevance.  
+                  </p>                 
+                  <!-- Player -->                
                   <h3 class="light"> <i class="fa fa-tv"></i>&nbsp&nbspPlayer </h3>
                   <p>
-                    Cyclops embeds are just a light wrapper around a YouTube player instance, driven by YouTube's
+                    Cyclops embeds are just a light wrap the YouTube player and use YouTube's
                     own javascript API. This means your video edit gets served with the same speed and reliability
                     as any YouTube video.
                   </p>
-                  <!-- Seek -->
-                  <h3 class="light"> <i class="fa fa-step-forward"></i>&nbsp&nbspSeek </h3>
-                  <p>
+                  <!-- Seek -->                  
+                  <h3 class="light hide-1200"> <i class="fa fa-step-forward"></i>&nbsp&nbspSeek </h3>
+                  <p class="hide-1200">
                     Jump to any location in the video by clicking the player timebar. Drag the rangefinder's handles 
                     to 'scrub' through the video, looking for the scene you want.
-                  </p>
-                  <!-- Seek -->
+                  </p>   
+                  <!-- Set -->  
                   <h3 class="light"> <i class="fa fa-chevron-right"></i>&nbsp&nbspSet </h3>
                   <p>
                     Use the startpoint and endpoint setters to make micro adjustments to the beginning and end of your
                     clip. Set clip boundaries as the video plays using the quickset buttons.
                   </p>
-                  <h3 class="light"> <i class="fa fa-sliders"></i>&nbsp&nbspPlayback </h3>
-                  <p>
+                  <!-- Playback --> 
+                  <h3 class="light hide-1200"> <i class="fa fa-sliders"></i>&nbsp&nbspPlayback </h3>
+                  <p class="hide-1200">
                     Set your clip's playback speed and sound level. 
-                  </p>
+                  </p>     
+                  <!-- Publish -->
                   <h3 class="light"> <i class="fa fa-code"></i>&nbsp&nbspPublish </h3>
                   <p>
                     Generate a link or an iframe snippet for your clip and post or embed it in your page. See the Twitter
@@ -49,11 +51,77 @@
                 </div>
             </div>
             <!-- Embeditor App Screenshot -->
-            <div class="col-lg-8 col-sm-8 hidden-xs text-center">
+            <div class="col-lg-8 col-md-8 text-center">
                 <div class="service-box">
                     <img src="../img/embeditor_ss.png" class="img-responsive"/> 
                 </div>
             </div>
+        </div>
+    </div>
+    <!-- Tablet Layout -->
+    <div class="container visible-sm">
+        <!-- Embeditor App Screenshot -->
+        <div class="row">
+          <div class="col-sm-12 text-center">
+              <div class="service-box">
+                  <img src="../img/embeditor_ss.png" class="img-responsive"/> 
+              </div>
+          </div>
+        </div>
+        <!-- Features Descriptions -->
+        <div class="row"> 
+          <!-- Player -->
+          <span class="col-sm-4">
+            <h3 class="light"> <i class="fa fa-tv"></i>&nbsp&nbspPlayer </h3>
+            <p>
+              Cyclops embeds are just a light wrapper around the YouTube player, driven by YouTube's
+              own javascript API. This means your video edit gets served with the same speed and reliability
+              as any YouTube video.
+            </p>
+          </span> 
+          <!-- Publish -->
+          <span class="col-sm-4">
+            <h3 class="light"> <i class="fa fa-code"></i>&nbsp&nbspPublish </h3>
+            <p>
+              Generate a link or an iframe snippet for your clip and post or embed it in your page. See the Twitter
+              guide below for help with links, and the Tumblr guide for help with iframes.  
+            </p>
+          </span>
+          <!-- Search -->
+          <span class="col-sm-4">
+            <h3 class="light"> <i class="fa fa-search"></i>&nbsp&nbspSearch </h3>
+            <p>
+              Search YouTube's video and channels database with filters for duration, sorting 
+              by date and relevance, and search history.  
+            </p>
+          </span>
+         
+        </div>
+        <div class="row">
+           <!-- Seek -->
+          <span class="col-sm-4">
+            <h3 class="light"> <i class="fa fa-step-forward"></i>&nbsp&nbspSeek </h3>
+            <p>
+              Jump to any location in the video by clicking the player timebar. Drag the rangefinder's handles 
+              to 'scrub' through the video, looking for the scene you want.
+            </p>
+          </span>
+          <!-- Set -->
+          <span class="col-sm-4">
+            <h3 class="light"> <i class="fa fa-chevron-right"></i>&nbsp&nbspSet </h3>
+            <p>
+              Use the startpoint and endpoint setters to make micro adjustments to the beginning and end of your
+              clip. Set clip boundaries as the video plays using the quickset buttons.
+            </p>
+          </span>
+          <!-- Playback -->
+          <span class="col-sm-4">
+            <h3 class="light"> <i class="fa fa-sliders"></i>&nbsp&nbspPlayback </h3>
+            <p>
+              Set your clip's playback speed and sound level. 
+            </p>
+          </span>
+              
         </div>
     </div>
 </section>

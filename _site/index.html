@@ -89,7 +89,7 @@
             YouTube Video Editor Utility.
           </p>
           <p>  Cut, loop and re-publish any YouTube Video instantly. <br class="hidden-xs"></p>
-          <li class="light"> No video file uploading or downloading </li>
+          <li class="light"> No uploading or downloading video files</li>
           <li class="light"> Precision loop timing (50ms resolution)</li>
           <li class="light"> Whitelisted to play in the Twitter feed </li>
           <li class="light"> Clean, mobile ready embeds </li>
@@ -108,44 +108,46 @@
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">Editor Features</h2>
-                <hr class="divider">
+                <hr class="divider-thin">
             </div>
         </div>
     </div>
-    <div class="container">
+    <!-- Desktop Layout -->
+    <div class="container hidden-sm">
          <div class="row">
             <!-- Editor features description -->
-            <div class="col-lg-4 col-sm-4 col-xs-12">
-                <div class="service-box">
-                  <!-- Search -->
+            <div class="col-lg-4 col-md-4">
+                <div class="row service-box">
+                  <!-- Search -->        
                   <h3 class="light"> <i class="fa fa-search"></i>&nbsp&nbspSearch </h3>
                   <p>
-                    Search YouTube's video database with filters for duration, sorting 
-                    by date and relevance, and search history.  
-                  </p>
-                  <!-- Player -->
+                    Search YouTube's video and channels database with filters for duration, date and relevance.  
+                  </p>                 
+                  <!-- Player -->                
                   <h3 class="light"> <i class="fa fa-tv"></i>&nbsp&nbspPlayer </h3>
                   <p>
-                    Cyclops embeds are just a light wrapper around a YouTube player instance, driven by YouTube's
+                    Cyclops embeds are just a light wrap the YouTube player and use YouTube's
                     own javascript API. This means your video edit gets served with the same speed and reliability
                     as any YouTube video.
                   </p>
-                  <!-- Seek -->
-                  <h3 class="light"> <i class="fa fa-step-forward"></i>&nbsp&nbspSeek </h3>
-                  <p>
+                  <!-- Seek -->                  
+                  <h3 class="light hide-1200"> <i class="fa fa-step-forward"></i>&nbsp&nbspSeek </h3>
+                  <p class="hide-1200">
                     Jump to any location in the video by clicking the player timebar. Drag the rangefinder's handles 
                     to 'scrub' through the video, looking for the scene you want.
-                  </p>
-                  <!-- Seek -->
+                  </p>   
+                  <!-- Set -->  
                   <h3 class="light"> <i class="fa fa-chevron-right"></i>&nbsp&nbspSet </h3>
                   <p>
                     Use the startpoint and endpoint setters to make micro adjustments to the beginning and end of your
                     clip. Set clip boundaries as the video plays using the quickset buttons.
                   </p>
-                  <h3 class="light"> <i class="fa fa-sliders"></i>&nbsp&nbspPlayback </h3>
-                  <p>
+                  <!-- Playback --> 
+                  <h3 class="light hide-1200"> <i class="fa fa-sliders"></i>&nbsp&nbspPlayback </h3>
+                  <p class="hide-1200">
                     Set your clip's playback speed and sound level. 
-                  </p>
+                  </p>     
+                  <!-- Publish -->
                   <h3 class="light"> <i class="fa fa-code"></i>&nbsp&nbspPublish </h3>
                   <p>
                     Generate a link or an iframe snippet for your clip and post or embed it in your page. See the Twitter
@@ -154,11 +156,77 @@
                 </div>
             </div>
             <!-- Embeditor App Screenshot -->
-            <div class="col-lg-8 col-sm-8 hidden-xs text-center">
+            <div class="col-lg-8 col-md-8 text-center">
                 <div class="service-box">
                     <img src="../img/embeditor_ss.png" class="img-responsive"/> 
                 </div>
             </div>
+        </div>
+    </div>
+    <!-- Tablet Layout -->
+    <div class="container visible-sm">
+        <!-- Embeditor App Screenshot -->
+        <div class="row">
+          <div class="col-sm-12 text-center">
+              <div class="service-box">
+                  <img src="../img/embeditor_ss.png" class="img-responsive"/> 
+              </div>
+          </div>
+        </div>
+        <!-- Features Descriptions -->
+        <div class="row"> 
+          <!-- Player -->
+          <span class="col-sm-4">
+            <h3 class="light"> <i class="fa fa-tv"></i>&nbsp&nbspPlayer </h3>
+            <p>
+              Cyclops embeds are just a light wrapper around the YouTube player, driven by YouTube's
+              own javascript API. This means your video edit gets served with the same speed and reliability
+              as any YouTube video.
+            </p>
+          </span> 
+          <!-- Publish -->
+          <span class="col-sm-4">
+            <h3 class="light"> <i class="fa fa-code"></i>&nbsp&nbspPublish </h3>
+            <p>
+              Generate a link or an iframe snippet for your clip and post or embed it in your page. See the Twitter
+              guide below for help with links, and the Tumblr guide for help with iframes.  
+            </p>
+          </span>
+          <!-- Search -->
+          <span class="col-sm-4">
+            <h3 class="light"> <i class="fa fa-search"></i>&nbsp&nbspSearch </h3>
+            <p>
+              Search YouTube's video and channels database with filters for duration, sorting 
+              by date and relevance, and search history.  
+            </p>
+          </span>
+         
+        </div>
+        <div class="row">
+           <!-- Seek -->
+          <span class="col-sm-4">
+            <h3 class="light"> <i class="fa fa-step-forward"></i>&nbsp&nbspSeek </h3>
+            <p>
+              Jump to any location in the video by clicking the player timebar. Drag the rangefinder's handles 
+              to 'scrub' through the video, looking for the scene you want.
+            </p>
+          </span>
+          <!-- Set -->
+          <span class="col-sm-4">
+            <h3 class="light"> <i class="fa fa-chevron-right"></i>&nbsp&nbspSet </h3>
+            <p>
+              Use the startpoint and endpoint setters to make micro adjustments to the beginning and end of your
+              clip. Set clip boundaries as the video plays using the quickset buttons.
+            </p>
+          </span>
+          <!-- Playback -->
+          <span class="col-sm-4">
+            <h3 class="light"> <i class="fa fa-sliders"></i>&nbsp&nbspPlayback </h3>
+            <p>
+              Set your clip's playback speed and sound level. 
+            </p>
+          </span>
+              
         </div>
     </div>
 </section>
@@ -167,7 +235,7 @@
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">Twitter Guide</h2>
-                <hr class="divider">
+                <hr class="divider-thin">
             </div>
         </div>
     </div>
@@ -180,7 +248,7 @@
                   <!-- Tweet -->
                   <h3 class="light"> <i class="fa fa-twitter"></i>&nbsp&nbspTweet</h3>
                   <p>
-                    Click "tweet" to open a share dialog with a link to your edit. 
+                    Click 'Tweet' to share a link to your edit. 
                   </p>
                 </div>
             </div>
@@ -189,7 +257,7 @@
                   <!-- Watch -->
                   <h3 class="light"> <i class="fa fa-eye"></i>&nbsp&nbspWatch</h3>
                   <p>
-                    Plays in Twitter's feed like any other YouTube video. 
+                    Opens and plays in Twitter's feed like any other YouTube video. 
                   </p>
                 </div>
             </div>
@@ -198,11 +266,11 @@
         <div class="row">
             <!-- Tweet -->
             <div class="col-lg-6 col-sm-6 hidden-xs text-center">
-                <div class="service-box narrower">
+                <div class="service-box no-top-sm narrower">
                     <img src="../img/twittershare_ss.png" class="img-responsive"/> 
                 </div>
-                <h3 class="light text-left"> <i class="fa fa-user"></i>&nbsp&nbspFeed</h3>
-                <div class="service-box narrower">
+                <div class="service-box no-top-sm narrower">
+                    <h3 class="light text-left"> <i class="fa fa-inbox"></i>&nbsp&nbspFeed View</h3>
                     <img src="../img/twitterplay_ss.png" class="img-responsive"/> 
                 </div>
             </div>

@@ -123,8 +123,19 @@ aside { padding: 50px 0;}
     padding-right: 20px;
 }
 
+.hide-1200 {
+     @media (max-width: 1200px) {
+       display: none;
+   }
+}
 .no-top-xs {
    @media (max-width: 767px) {
+      margin-top: 0px !important;
+   }  
+}
+
+.no-top-sm {
+   @media (min-width: 768px) {
       margin-top: 0px !important;
    }  
 }
@@ -211,7 +222,7 @@ section.call-to-action {
 // Tablet
 @media screen and (max-width: 768px) {
     .jumbotron {
-        background-image: url(../img/jumbolightstone_s.png);
+        background-image: url(../img/ytdisc_m.png);
     }
 }
 
