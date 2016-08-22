@@ -17,6 +17,11 @@ body { height: 100%; width: 100%;}
 body { @include sans-serif-font;}
 h1, h2, h3, h4, h5, h6 { @include sans-serif-font; }
 
+
+// -------------------- Colors ----------------
+.tumblr-color{ color: #36465d; }
+.twitter-color{ color: #55acee; }
+
 // --------------------  HR ------------------
 hr {
     border-color: $theme-primary;
@@ -94,6 +99,8 @@ p.larger{ font-size: 45px !important; }
 // -------------- Text/Icons -----------
 .text-faded { color: rgba(white, .7);}
 .text-left { text-align: left; }
+.inline { display: inline-block; }
+.v-bottom { vertical-align: bottom; }
 .opaque-5{ opacity: .5; }
 .opaque-7{ opacity: .7; }
 
@@ -135,8 +142,8 @@ aside { padding: 50px 0;}
 }
 
 .no-top-sm {
-   @media (min-width: 768px) {
-      margin-top: 0px !important;
+   @media (max-width: 768px) {
+      margin-top: 15px !important;
    }  
 }
 
@@ -192,6 +199,9 @@ section.call-to-action {
     //background-color: #eee;
     border-top: solid 2px #ddd;
     border-bottom: solid 2px #ddd;
+}
+#tumblr {
+    background-color: #eee;
 }
 
 // --------------Jumbotron -------------

@@ -21,6 +21,12 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
 
+.tumblr-color {
+  color: #36465d; }
+
+.twitter-color {
+  color: #55acee; }
+
 hr {
   border-color: #ccc;
   border-width: 3px;
@@ -93,6 +99,12 @@ p.larger {
 .text-left {
   text-align: left; }
 
+.inline {
+  display: inline-block; }
+
+.v-bottom {
+  vertical-align: bottom; }
+
 .opaque-5 {
   opacity: .5; }
 
@@ -135,9 +147,9 @@ aside {
   .no-top-xs {
     margin-top: 0px !important; } }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .no-top-sm {
-    margin-top: 0px !important; } }
+    margin-top: 15px !important; } }
 
 .graphic-small {
   display: none; }
@@ -181,6 +193,9 @@ section.call-to-action {
   background-color: #f5f8fa;
   border-top: solid 2px #ddd;
   border-bottom: solid 2px #ddd; }
+
+#tumblr {
+  background-color: #eee; }
 
 @media screen and (min-width: 768px) {
   .jumbo_top {
